@@ -7,7 +7,7 @@ async function main() {
   const app = express();
 
   app.use(express.json());
-  app.use(express.static(path.join(__dirname, '..', 'frontend')));
+  app.use(express.static(path.join(__dirname, 'frontend')));
 
   app.get('/api/menu', async (req, res) => {
     const items = await db('menu_items').select('*').orderBy(['category', 'id']);

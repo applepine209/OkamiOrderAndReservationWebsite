@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Place an order — Okami</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="wordmark" href="index.html"><span class="kanji">狼</span>Okami</a>
+    <div class="nav-links">
+      <a href="order.html" aria-current="page">Order</a>
+      <a href="reservation.html">Reservation</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Place an order</h1>
+    <form id="order-form">
+      <select id="location" required></select>
+      <input id="customer_name" placeholder="Name" required>
+      <div id="items"></div>
+      <button type="submit">Place order</button>
+    </form>
+    <div id="result"></div>
+  </main>
+
+  <script src="order.js"></script>
+</body>
+</html>

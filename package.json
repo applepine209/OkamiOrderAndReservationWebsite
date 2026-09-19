@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.1136.0",
+    "express": "^5.2.1",
+    "knex": "^3.3.0",
+    "mysql2": "^3.24.4"
+  }
+}

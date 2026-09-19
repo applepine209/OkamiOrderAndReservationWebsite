@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a reservation — Okami</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="wordmark" href="index.html"><span class="kanji">狼</span>Okami</a>
+    <div class="nav-links">
+      <a href="order.html">Order</a>
+      <a href="reservation.html" aria-current="page">Reservation</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Book a reservation</h1>
+    <form id="reservation-form">
+      <select id="location" required></select>
+      <input id="name" placeholder="Name" required>
+      <input id="party_size" type="number" min="1" placeholder="Party size" required>
+      <input id="reservation_time" type="datetime-local" required>
+      <button type="submit">Reserve</button>
+    </form>
+    <div id="result"></div>
+  </main>
+
+  <script src="reservation.js"></script>
+</body>
+</html>

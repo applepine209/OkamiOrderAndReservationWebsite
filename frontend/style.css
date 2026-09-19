@@ -162,3 +162,32 @@ button[type="submit"] {
 button[type="submit"]:hover { opacity: .9; }
 #result { margin-top: 2rem; }
 #result ul { padding-left: 1.2rem; color: var(--stone); }
+
+/* Order form: dynamic item rows */
+.item-row { display: flex; gap: .75rem; align-items: center; margin-bottom: .75rem; }
+.item-row select { flex: 1; margin-bottom: 0; }
+.item-row input { width: 4.5rem; margin-bottom: 0; }
+.item-row .remove-item {
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--stone);
+  width: 2.2rem;
+  height: 2.2rem;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+.item-row .remove-item:hover { border-color: var(--vermillion); color: var(--vermillion); }
+#add-item {
+  display: block;
+  background: none;
+  border: 1px dashed var(--line);
+  color: var(--sumi);
+  padding: .6rem 1.2rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  font-family: 'Work Sans', sans-serif;
+  font-size: .95rem;
+}
+#add-item:hover { border-color: var(--vermillion); color: var(--vermillion); }

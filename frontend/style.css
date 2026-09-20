@@ -191,3 +191,16 @@ button[type="submit"]:hover { opacity: .9; }
   font-size: .95rem;
 }
 #add-item:hover { border-color: var(--vermillion); color: var(--vermillion); }
+.instance-footer {
+  margin-top: 3rem;
+  padding: 1.25rem 1rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+.instance-footer p {
+  margin: 0;
+  font-family: 'SFMono-Regular', Consolas, Menlo, monospace;
+  font-size: .7rem;
+  letter-spacing: .03em;
+  color: var(--stone);
+}

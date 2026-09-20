@@ -1,13 +1,19 @@
 const express = require('express');
 const path = require('path');
 const { initDb } = require('./db');
+const { getInstanceId } = require('./instance-id');
 
 async function main() {
   const db = await initDb();
+  const instanceId = await getInstanceId();
   const app = express();
 
   app.use(express.json());
   app.use(express.static(path.join(__dirname, 'frontend')));
+
+  app.get('/api/instance-id', (req, res) => {
+    res.json({ instanceId });
+  });
 
   app.get('/api/menu', async (req, res) => {
     const items = await db('menu_items').select('*').orderBy(['category', 'id']);

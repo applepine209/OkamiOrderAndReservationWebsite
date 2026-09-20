@@ -11,6 +11,7 @@
 
 * { box-sizing: border-box; }
 
+html, body { height: 100%; }
 body {
   margin: 0;
   background: var(--paper);
@@ -18,7 +19,11 @@ body {
   font-family: 'Work Sans', sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+main { flex: 1 0 auto; }
 
 h1, h2, .wordmark, .explore .label, .menu-item .price {
   font-family: 'Zen Old Mincho', serif;

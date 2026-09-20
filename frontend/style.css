@@ -191,6 +191,8 @@ button[type="submit"]:hover { opacity: .9; }
   font-size: .95rem;
 }
 #add-item:hover { border-color: var(--vermillion); color: var(--vermillion); }
+
+/* Instance ID footer */
 .instance-footer {
   margin-top: 3rem;
   padding: 1.25rem 1rem;
